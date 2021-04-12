@@ -1,0 +1,38 @@
+.font{
+    background-color:saddlebrown
+}
+.h1{
+    text-align: center;
+    border:10px solid red ;
+}
+.image1{
+    width: 100%;
+    height: auto; 
+    padding: 30px;
+    
+}
+.image2{
+    width: 100%; 
+    /* height auto pour laisser gérer le navigateur quant au ratio de l'image */
+    height: auto;
+    padding: 30px;
+    
+} 
+.image3{
+    width: 100%;
+    height: auto;
+    padding: 30px; 
+} 
+.p1, .p2, .p3, .p4{
+  text-decoration: underline; 
+  text-align: center;
+  border: 10px solid ;
+  display:flex;
+  /* met en colonne */
+  flex-direction: column;
+  /* centrer à l'horizontale quand on est colonne sinon en ligne centrage à la verticale */
+  align-items:center;
+  /* centrer verticalement quand on est en colonne sinon en ligne centrage à l'horizontale  */
+  justify-content: center;
+}
+
