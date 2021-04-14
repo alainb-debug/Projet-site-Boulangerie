@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,26 @@
     <title>Projet Boulangerie</title>
 </head>
 <body class="font">
-    <section class="container">
-        <div class="row">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h5 class="text-white h5">Acceuil</h5>
-                  <span class="text-muted">Pas de commande possible</span>
+    <section class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./index.html">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="./Interieur boulangerie.jpg"><h6>Interieur boulangerie</h6></a>
+                  <a class="nav-link" href="./chausson au pomme.jpg"><h6>chausson</h6></a>
+                  <a class="nav-link" href="./Croissant.jpg"><h6>Croissant</h6></a>
+                  <a class="nav-link" href="./boulangerie pate.jpg"><h6>pates</h6></a>
+                  <a class="nav-link" href="./daisy-cake gateaux.jpg"><h6>Gateaux Citron</h6></a>
+                  <a class="nav-link" href="./Gateaux.jpg"><h6>Daisy-Cake</h6></a>
+                  <a class="nav-link" href="./piéce monté cacke.jpg"><h6>Piece Monte</h6></a>
+                 
                 </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
-            <h1 class="h1">Boulangerie-Pâtisserie Depuis 1950</h1>
+        </nav>     
+                <h1 class="h1">Boulangerie-Pâtisserie Depuis 1950</h1>
             <div class="row">
                 <div class="col-12 col-md-4">
                     <img class="image1" src="./Interieur boulangerie.jpg" alt="intérieur boulangerie">
@@ -34,7 +38,30 @@
                     <img class="image3" src="./chausson au pomme.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-4">
-                    <img class="image2" src="./Croissant.jpg" alt="">
+                    <img class="image2 " src="./Croissant.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="image4" src="./Baguette de pains.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="image5" src="./baguettes-.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="image6" src="./boulangerie pate.jpg" alt="">
+                   
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="image7" src="./daisy-cake gateaux.jpg"alt="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="image8" src="./Gateaux.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="image9" src="./piéce monté cacke.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -44,13 +71,24 @@
             voir la doc : https://www.w3schools.com/cssref/css3_pr_justify-content.asp
         -->
         <div class="row d-flex justify-content-around">
-            <p class="p1 col-12 col-md-2"> Contact<br>Boulangerie 1950<br>rue de la Liberté<br>69100 Lyon</p>
-            <p class="p2 col-12 col-md-2">Géo Localisation:<br>Click sur le boutton pour voir vos coordonées:<br><button onclick="getLocation()">Montrer moi</button><br/></p>
-            <p class="p3 col-12 col-md-2"> Horaire D'ouverture<br>10h00-16h00-18h00-00h00</p>
-            <p class="p4 col-12 col-md-2">Plat du Jour<br>Du Lundi au Vendredi<br>A la Carte<br> Du Vendredi soir<br>au dimanche soir</p>
-            <div id="mapholder"></div>
+            <div class="p1 col-12 col-md-2">
+                <h5>contact</h5>
+                <h6>Boulangerie 1950<br>rue de la Liberté<br>69100 Lyon</h6>
+            </div>
+            <div class="p2 col-12 col-md-2">
+                <h5>Géo Localisation:</h5>
+                <h6>Click sur le boutton pour voir vos coordonées:</h6>
+            </div>
+            <div class="p3 col-12 col-md-2">
+                <h5>Horaire D'ouverture:</h5>
+                <h6>Du Lundi au Vendredi</h6>
+                <h6>10h00-16h00-18h00-00h00</h6>
+            </div>
+            <div class="p4 col-12 col-md-2">
+                    <h5>Plat du Jour:</h5>
+                    <h6>Du Lundi au Vendredi<br>A la Carte<br> Du Vendredi soir<br>au dimanche soir</h6>
+            </div>
         </div>
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
